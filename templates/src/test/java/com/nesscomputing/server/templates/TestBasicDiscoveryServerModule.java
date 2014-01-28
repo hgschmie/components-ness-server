@@ -20,8 +20,6 @@ import com.google.inject.Guice;
 import com.google.inject.Module;
 import com.google.inject.Stage;
 
-import org.junit.Test;
-
 import com.nesscomputing.config.Config;
 import com.nesscomputing.config.ConfigModule;
 import com.nesscomputing.galaxy.GalaxyConfigModule;
@@ -30,6 +28,8 @@ import com.nesscomputing.jackson.NessJacksonModule;
 import com.nesscomputing.lifecycle.guice.LifecycleModule;
 import com.nesscomputing.scopes.threaddelegate.ThreadDelegatedScopeModule;
 import com.nesscomputing.tracking.guice.TrackingModule;
+
+import org.junit.Test;
 
 public class TestBasicDiscoveryServerModule
 {

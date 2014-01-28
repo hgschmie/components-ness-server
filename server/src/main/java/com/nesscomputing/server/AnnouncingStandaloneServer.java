@@ -15,11 +15,11 @@
  */
 package com.nesscomputing.server;
 
+import com.google.inject.Module;
+
 import com.nesscomputing.lifecycle.LifecycleStage;
 import com.nesscomputing.lifecycle.ServiceDiscoveryLifecycle;
 import com.nesscomputing.lifecycle.guice.LifecycleModule;
-
-import com.google.inject.Module;
 
 /**
  * Standalone server that uses the ServiceDiscovery Lifecycle. No additional

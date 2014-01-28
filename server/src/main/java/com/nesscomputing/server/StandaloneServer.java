@@ -25,8 +25,6 @@ import com.google.inject.Injector;
 import com.google.inject.Module;
 import com.google.inject.Stage;
 
-import org.apache.commons.lang3.time.StopWatch;
-
 import com.nesscomputing.config.Config;
 import com.nesscomputing.config.ConfigModule;
 import com.nesscomputing.jmx.JmxModule;
@@ -39,6 +37,8 @@ import com.nesscomputing.log4j.ConfigureStandaloneLogging;
 import com.nesscomputing.logging.AssimilateForeignLogging;
 import com.nesscomputing.logging.Log;
 import com.nesscomputing.serverinfo.ServerInfo;
+
+import org.apache.commons.lang3.time.StopWatch;
 
 /**
  * Standalone main class.
@@ -150,7 +150,7 @@ public abstract class StandaloneServer
         doStopServer(false);
     }
 
-    private final void doStopServer(boolean fromHook) {
+    private void doStopServer(boolean fromHook) {
         Preconditions.checkState(!stopped, "Server was already stopped, double-stop denied!");
 
         Preconditions.checkNotNull(lifecycle, "No Lifecycle Object was injected!");

@@ -18,14 +18,14 @@ package com.nesscomputing.server;
 import com.google.inject.Binder;
 import com.google.inject.Module;
 
+import com.nesscomputing.config.Config;
+
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-
-import com.nesscomputing.config.Config;
-import com.nesscomputing.testing.lessio.AllowNetworkAccess;
-import com.nesscomputing.testing.lessio.AllowNetworkListen;
+import org.kitei.testing.lessio.AllowNetworkAccess;
+import org.kitei.testing.lessio.AllowNetworkListen;
 
 @AllowNetworkListen(ports= {0})
 @AllowNetworkAccess(endpoints= {"127.0.0.1:0"})

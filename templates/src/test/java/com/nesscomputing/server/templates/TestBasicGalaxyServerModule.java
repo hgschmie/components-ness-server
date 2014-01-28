@@ -15,13 +15,14 @@
  */
 package com.nesscomputing.server.templates;
 
-import org.junit.Test;
-
 import com.google.inject.Guice;
 import com.google.inject.Stage;
+
 import com.nesscomputing.config.Config;
 import com.nesscomputing.config.ConfigModule;
 import com.nesscomputing.lifecycle.guice.LifecycleModule;
+
+import org.junit.Test;
 
 public class TestBasicGalaxyServerModule
 {
